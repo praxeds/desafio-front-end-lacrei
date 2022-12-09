@@ -79,4 +79,15 @@ export const MainSection = styled.main`
         }
     }
 
+    @media (max-width: 520px) {
+        padding: 1rem 1rem 0px;
+
+        div {
+            .btnContainer {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
 `;
