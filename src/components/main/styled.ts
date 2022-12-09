@@ -87,6 +87,14 @@ export const MainSection = styled.main`
                 flex-direction: column;
                 gap: 1rem;
             }
+            h2 {
+                ${styles.text(1.5, 700)};
+            }
+            p {
+                ${styles.text(0.875, 400)};
+                line-height: 1.25rem;
+                margin-top: 0.875rem;
+            }
         }
     }
 
