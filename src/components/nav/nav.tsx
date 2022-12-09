@@ -1,15 +1,15 @@
-import { Navbar } from "./styled";
+import { NavbarSection } from "./styled";
 
 function Nav() {
   return (
-    <Navbar>
+    <NavbarSection>
       <h1>Lacrei</h1>
       <ul>
         <li><a href='#'>Home</a></li>
         <li><a href='#'>Pessoa Usuária</a></li>
         <li><a href='#'>Profissional</a></li>
       </ul>
-    </Navbar>
+    </NavbarSection>
   );
 }
 

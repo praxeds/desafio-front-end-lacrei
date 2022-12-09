@@ -6,7 +6,8 @@ export const styles = {
         secondaryLight: "#727272",
         secondaryMedium: "#515151",
         accent: "#018762",
-        accentLight: "#4eab91"
+        accentLight: "#4eab91",
+        accentLightest: "#b0e0d3"
     },
     text: (size: number, weight: number) => `
         font-size: ${size}rem;

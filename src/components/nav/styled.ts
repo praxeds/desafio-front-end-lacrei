@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {styles} from "../globalStyles";
 
-export const Navbar = styled.nav`
+export const NavbarSection = styled.nav`
     background: ${styles.colors.secondary};
     ${styles.flex("row", "space-between", "center")};
     padding: 0.5rem 4rem;
