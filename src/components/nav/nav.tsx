@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from "./styled";
 
 function Nav() {

@@ -4,6 +4,7 @@ export const styles = {
         secondary: "#eeeeee",
         secondaryDark: "#1f1f1f",
         secondaryLight: "#727272",
+        secondaryMedium: "#515151",
         accent: "#018762",
         accentLight: "#4eab91"
     },

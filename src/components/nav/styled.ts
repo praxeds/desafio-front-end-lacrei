@@ -4,7 +4,7 @@ import {styles} from "../globalStyles";
 export const Navbar = styled.nav`
     background: ${styles.colors.secondary};
     ${styles.flex("row", "space-between", "center")};
-    padding: 0.5rem 4.1vw;
+    padding: 0.5rem 4rem;
     letter-spacing: -0.5px;
     h1 {
         ${styles.text(2, 700)};
@@ -18,7 +18,7 @@ export const Navbar = styled.nav`
         }
     }
     ul {
-        ${styles.flex("row", "flex-end", "center", "2rem")};
+        ${styles.flex("row", "flex-end", "center", "2.6rem")};
         list-style: none;
         margin: 0;
         padding: 0;
