@@ -62,4 +62,21 @@ export const MainSection = styled.main`
         }
         
     }
+
+    @media (max-width: 1040px) {
+        ${styles.flex("column", "center", "center")};
+        padding: 2rem 2rem 0px;
+
+        div {
+            h2 {
+                ${styles.text(2, 700)};
+            }
+            p {
+                ${styles.text(1, 400)};
+                line-height: 1.5rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
 `;

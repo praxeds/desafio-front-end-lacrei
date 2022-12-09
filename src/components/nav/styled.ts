@@ -36,6 +36,9 @@ export const Navbar = styled.nav`
             }
         }
     }
+    @media (max-width: 1040px) {
+        padding: 0.5rem 2rem;
+    }
 
     @media (max-width: 520px) {
         ${styles.flex("column", "space-between", "center")};
