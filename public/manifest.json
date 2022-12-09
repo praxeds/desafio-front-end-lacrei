@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Front-end Lacrei",
+  "name": "Desafio Front-end Lacrei",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./media/favicon.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
