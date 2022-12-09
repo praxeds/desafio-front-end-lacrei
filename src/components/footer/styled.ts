@@ -46,4 +46,17 @@ export const FooterSection = styled.footer`
         ${styles.text(0.75, 400)};
         color: ${styles.colors.secondaryMedium};
     }
+
+    @media (max-width: 520px) {
+        margin: 0px 1rem;
+        padding-top: 1rem;
+
+        div.nav {
+            flex-direction: column;
+            gap: 0.25rem;
+            a {
+                ${styles.text(0.875, 400)};
+            }
+        }
+    }
 `;
