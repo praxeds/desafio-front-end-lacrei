@@ -1,17 +1,56 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import Home from './components/home/home';
+import User from './components/usuario/usuario';
+import Profissional from './components/profissional/profissional';
 
-import HomeSection from './components/home/home';
-import UserSection from './components/usuario/usuario';
+export default function App() {
+  const [state, setstate] = useState("firstSection")
 
-const App = (props:any) => {
-    const [active, setActive] = useState('secondSection');
+  const setNewTitle = (title : string) => {
+    document.title = title;
+  }
+  const resetActiveLinks = () => {
+    const activeEl: Element[] = Array.from(document.querySelectorAll('.active'));
+    for (const element of activeEl) {
+      element.classList.remove('active');
+    }
+  }
 
-    return (
-        <main>
-            {active === 'firstSection' && <HomeSection/>}
-            {active === 'secondSection' && <UserSection/>}
-        </main>
-    )
+  
+  const homeEl: Element[] = Array.from(document.querySelectorAll('.home'));
+  const userEl: Element[] = Array.from(document.querySelectorAll('.user'));
+  const proEl: Element[] = Array.from(document.querySelectorAll('.pro'));
+
+
+  for (const element of homeEl) {
+    element.addEventListener('click', () => {
+      setNewTitle('Home | Desafio Lacrei');
+      resetActiveLinks();
+      setstate('firstSection')
+      element.classList.add('active');
+    });
+  }
+  for (const element of userEl) {
+    element.addEventListener('click', () => {
+      setNewTitle('Pessoa Usuária | Desafio Lacrei');
+      resetActiveLinks();
+      setstate('secondSection')
+      element.classList.add('active');
+    });
+  }
+  for (const element of proEl) {
+    element.addEventListener('click', () => {
+      setNewTitle('Profissional | Desafio Lacrei');
+      resetActiveLinks();
+      setstate('thirdSection')
+      element.classList.add('active');
+    });
+  }
+  return (
+    <div>
+      {state === "firstSection" && < Home />}
+      {state === "secondSection" && < User />}
+      {state === "thirdSection" && < Profissional />}
+    </div>
+  )
 }
-
-export default App;
