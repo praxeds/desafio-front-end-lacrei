@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { styles } from "../globalStyles";
 
-export const MainSection = styled.main`
+export const HomeSection = styled.main`
     ${styles.flex("row", "space-between", "flex-start")};
     width: 100%;
     -webkit-box-pack: justify;

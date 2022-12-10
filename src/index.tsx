@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-
 import NavSection from './components/nav/nav';
-import MainSection from './components/main/main';
+import App from './app';
 import FooterSection from './components/footer/footer';
 
 const root = ReactDOM.createRoot(
@@ -14,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <NavSection />
-    <MainSection />
+    <App />
     <FooterSection />
   </React.StrictMode>
 );

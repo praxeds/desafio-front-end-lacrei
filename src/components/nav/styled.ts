@@ -34,6 +34,12 @@ export const NavbarSection = styled.nav`
             &:active, &:focus {
                 color: ${styles.colors.accent};
             }
+            &.active {
+                color: ${styles.colors.accent};
+                &:hover {
+                    color: ${styles.colors.accentLight};
+                }
+            }
         }
     }
     @media (max-width: 1040px) {

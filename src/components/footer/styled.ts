@@ -16,17 +16,16 @@ export const FooterSection = styled.footer`
             cursor: pointer;
             ${styles.resetLink()}
             ${styles.transition("all", "0.2s", "ease")}
-
         }
         &.nav {
             a {
                 color: ${styles.colors.secondaryDark};
-            &:hover {
-                color: ${styles.colors.secondaryLight};
-            }
-            &:active, &:focus {
-                font-weight: 700;
-            }
+                &:hover {
+                    color: ${styles.colors.secondaryLight};
+                }
+                &.active, &:focus {
+                    font-weight: 700;
+                }
             }
         }
         &.icons {
@@ -35,7 +34,6 @@ export const FooterSection = styled.footer`
                 ${styles.flex("row", "center", "center")}
                 ${styles.text(2, 400)};
                 color: ${styles.colors.accent};
-                ${styles.transition("all", "0.2s", "ease")}
                 &:hover {
                     color: ${styles.colors.accentLight};
                 }
@@ -58,5 +56,9 @@ export const FooterSection = styled.footer`
                 ${styles.text(0.875, 400)};
             }
         }
+    }
+
+    @media (max-width: 1040px) {
+        margin: 0px 2rem;
     }
 `;

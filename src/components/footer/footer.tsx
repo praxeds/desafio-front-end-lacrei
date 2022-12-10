@@ -7,14 +7,14 @@ function Footer() {
   return (
     <FooterSection>
       <div className="nav">
-        <a href="#">Home</a>
-        <a href="#">Pessoa Usuária</a>
-        <a href="#">Profissional</a>
+        <a className="home">Home</a>
+        <a className="user">Pessoa Usuária</a>
+        <a className="pro">Profissional</a>
       </div>
       <div className="icons">
-        <a href="#"><RiInstagramLine/></a>
-        <a href="#"><RiFacebookCircleLine/></a>
-        <a href="#"><RiLinkedinBoxLine/></a>
+        <a target="_blank" href="https://www.instagram.com/lacrei.saude"><RiInstagramLine/></a>
+        <a target="_blank" href="https://www.facebook.com/lacrei.saude"><RiFacebookCircleLine/></a>
+        <a target="_blank" href="https://www.linkedin.com/company/lacrei"><RiLinkedinBoxLine/></a>
       </div>
       <p>Desafio Front-end Lacrei</p>
     </FooterSection>
