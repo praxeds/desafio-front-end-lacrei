@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { styles } from "../globalStyles";
 
 export const HomeSection = styled.main`
+    &.noDisplay {
+        display: none;
+    }
     ${styles.flex("row", "space-between", "flex-start")};
     width: 100%;
     -webkit-box-pack: justify;

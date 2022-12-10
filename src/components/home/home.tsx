@@ -5,13 +5,13 @@ import {handleClick} from '../functions'
 
 function Home() {
   return (
-    <HomeSection>
+    <HomeSection className="currentSection" id="home">
       <div>
         <h2>Boas vindas a Lacrei Saúde</h2>
         <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
         <div className="btnContainer">
-            <a className="userBtn user" onClick={handleClick('Pessoa Usuária | Desafio Lacrei', '.user.el')}>Pessoa Usuária</a>
-            <a className="proBtn pro" onClick={handleClick('Profissional | Desafio Lacrei', '.pro.el')}>Profissional</a>
+            <a className="userBtn user" onClick={handleClick('Pessoa Usuária | Desafio Lacrei', '.user.el', 'usuario')}>Pessoa Usuária</a>
+            <a className="proBtn pro" onClick={handleClick('Profissional | Desafio Lacrei', '.pro.el', 'profissional')}>Profissional</a>
         </div>
       </div>
 

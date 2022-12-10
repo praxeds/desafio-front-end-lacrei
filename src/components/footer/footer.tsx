@@ -10,9 +10,9 @@ function Footer() {
   return (
     <FooterSection>
       <div className="nav">
-        <a className="home el" onClick={handleClick('Home | Desafio Lacrei', '.home.el')}>Home</a>
-        <a className="user el" onClick={handleClick('Pessoa Usuária | Desafio Lacrei', '.user.el')}>Pessoa Usuária</a>
-        <a className="pro el" onClick={handleClick('Profissional | Desafio Lacrei', '.pro.el')}>Profissional</a>
+        <a className="home el" onClick={handleClick('Home | Desafio Lacrei', '.home.el', 'home')}>Home</a>
+        <a className="user el" onClick={handleClick('Pessoa Usuária | Desafio Lacrei', '.user.el', 'usuario')}>Pessoa Usuária</a>
+        <a className="pro el" onClick={handleClick('Profissional | Desafio Lacrei', '.pro.el', 'profissional')}>Profissional</a>
       </div>
       <div className="icons">
         <a target="_blank" href="https://www.instagram.com/lacrei.saude"><RiInstagramLine/></a>

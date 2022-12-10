@@ -4,7 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Nav from './components/nav/nav';
-import App from './app';
+import Home from './components/home/home';
+import User from './components/usuario/usuario';
+import Profissional from './components/profissional/profissional';
 import Footer from './components/footer/footer';
 
 const root = ReactDOM.createRoot(
@@ -13,7 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
       <Nav />
-      <App />
+      < Home />
+      < User />
+      < Profissional />
       <Footer />
   </React.StrictMode>
 );
