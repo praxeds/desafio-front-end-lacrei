@@ -31,6 +31,7 @@ export const HomeSection = styled.main`
                 border-radius: 0.5rem;
                 box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
                 ${styles.transition("all", "0.2s", "ease")};
+                cursor: pointer;
                 
                 &.userBtn {
                     padding: 0.75rem 2rem;
