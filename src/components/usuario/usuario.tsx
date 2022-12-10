@@ -10,7 +10,7 @@ function User() {
       </div>
 
       <div>
-        <img src={image} loading="lazy" />
+        <img src={image}/>
       </div>
     </UserSection>
   );

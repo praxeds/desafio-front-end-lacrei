@@ -16,7 +16,7 @@ function Home() {
       </div>
 
       <div>
-        <img src={image} loading="lazy" />
+        <img src={image}/>
       </div>
     </HomeSection>
   );

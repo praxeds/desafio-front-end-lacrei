@@ -10,7 +10,7 @@ function Professional() {
       </div>
 
       <div>
-        <img src={image} loading="lazy" />
+        <img src={image}/>
       </div>
     </ProfissionalSection>
   );
