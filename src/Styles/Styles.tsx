@@ -58,7 +58,6 @@ ul {
 export const NavItem = styled.li<{ activepath: string }>`
     ${Mixins.transition("all", "0.2s", "ease")};
     cursor: pointer;
-    color: ${props => props.activepath === 'true' ? '#018762' : '#1F1F1F'};
 `;
 
 export const FooterSection = styled.footer`
@@ -68,7 +67,7 @@ export const FooterSection = styled.footer`
     height: 10rem;
     -webkit-box-pack: justify;
     ${Mixins.flex("column", "space-between", "flex-start")}
-    div {
+    div, ul {
         ${Mixins.flex("row", "flex-start", "flex-start")}
         gap: 2.5rem;
         a {
@@ -77,13 +76,17 @@ export const FooterSection = styled.footer`
             ${Mixins.transition("all", "0.2s", "ease")}
         }
         &.nav {
-            a {
+            ${Mixins.resetList()}
+            li {
                 color: ${Mixins.colors.black};
-                &:hover {
+                cursor: pointer;
+                a {
+                    &:hover {
                     color: ${Mixins.colors.gray};
                 }
                 &.active, &:focus {
                     font-weight: 700;
+                }
                 }
             }
         }
@@ -104,7 +107,7 @@ export const FooterSection = styled.footer`
     @media (max-width: 520px) {
         margin: 0px 1rem;
         padding-top: 1rem;
-        div.nav {
+        ul.nav {
             flex-direction: column;
             gap: 0.25rem;
             a {
