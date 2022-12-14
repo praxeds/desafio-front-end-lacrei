@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <FooterSection>
       <div className="nav">
-        <a className="home el">Home</a>
-        <a className="user el">Pessoa Usuária</a>
-        <a className="pro el">Profissional</a>
+        <a>Home</a>
+        <a>Pessoa Usuária</a>
+        <a>Profissional</a>
       </div>
       <div className="icons">
         <a target="_blank" href="https://www.instagram.com/lacrei.saude"><img src={Instagram} alt="Instagram" /></a>

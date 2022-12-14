@@ -6,12 +6,14 @@ import { GlobalStyles } from './Styles/GlobalStyles';
 
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
+import Home from './Pages/Home';
 
 export default function App() {
   return (
     <>
         <GlobalStyles />
         <Nav />
+        <Home />
         <Footer />
     </>
   );
