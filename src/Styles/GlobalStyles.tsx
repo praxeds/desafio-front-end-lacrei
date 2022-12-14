@@ -1,15 +1,24 @@
-export const styles = {
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+`;
+
+export const Mixins = {
     colors: {
-        primary: "#ffffff",
-        secondary: "#eeeeee",
-        secondaryDark: "#1f1f1f",
-        secondaryLight: "#727272",
-        secondaryMedium: "#515151",
-        accent: "#018762",
-        accentLight: "#4eab91",
-        accentLightest: "#b0e0d3"
+        white: '#fff',
+        black: '#1f1f1f',
+        gray: '#6c6c6c',
+        lightGray: '#eeeeee',
+        green: '#018762',
+        lightGreen: '#4eab91',
     },
-    text: (size: number, weight: number) => `
+    text: (size: number, weight: number = 400) => `
         font-size: ${size}rem;
         font-weight: ${weight};
     `,
@@ -26,5 +35,8 @@ export const styles = {
     resetLink: () => `
         text-decoration: none;
         color: inherit;
+    `,
+    resetList: () => `
+        list-style: none;
     `
 };

@@ -1,24 +1,5 @@
-import { FooterSection } from "../stylesheets/footer";
-import { RiLinkedinBoxLine } from "react-icons/ri";
-import { RiInstagramLine } from "react-icons/ri";
-import { RiFacebookCircleLine } from "react-icons/ri";
-
-function Footer() {
+export default function Footer() {
   return (
-    <FooterSection>
-      <div className="nav">
-        <a className="home el">Home</a>
-        <a className="user el">Pessoa Usuária</a>
-        <a className="pro el">Profissional</a>
-      </div>
-      <div className="icons">
-        <a target="_blank" href="https://www.instagram.com/lacrei.saude"><RiInstagramLine/></a>
-        <a target="_blank" href="https://www.facebook.com/lacrei.saude"><RiFacebookCircleLine/></a>
-        <a target="_blank" href="https://www.linkedin.com/company/lacrei"><RiLinkedinBoxLine/></a>
-      </div>
-      <p>Desafio Front-end Lacrei</p>
-    </FooterSection>
+    <h1>oi</h1>
   );
 }
-
-export default Footer;

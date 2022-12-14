@@ -1,16 +1,16 @@
-import { NavbarSection } from "../stylesheets/nav";
+import React from 'react';
+import { NavSection } from '../Styles/Styles';
 
-function Nav() {  
+
+export default function Nav() {
   return (
-    <NavbarSection>
+    <NavSection>
       <h1 className="home">Lacrei</h1>
       <ul>
-        <li><a className="home el">Home</a></li>
-        <li><a className="user el">Pessoa Usuária</a></li>
-        <li><a className="pro el">Profissional</a></li>
+        <li><a>Home</a></li>
+        <li><a>Pessoa Usuária</a></li>
+        <li><a>Profissional</a></li>
       </ul>
-    </NavbarSection>
+    </NavSection>
   );
 }
-
-export default Nav; 
