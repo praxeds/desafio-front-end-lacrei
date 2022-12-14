@@ -12,10 +12,12 @@ export default function Home() {
           <Button
             BtnClass='userBtn'
             title='Pessoa Usuária'
+            to="/pessoa-usuaria"
           />
           <Button
             BtnClass='proBtn'
             title='Profissional'
+            to="/profissional"
           />
         </BtnContainer>
       </div>

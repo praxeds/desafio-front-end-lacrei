@@ -1,5 +1,7 @@
-export default function Button({ BtnClass, title }: any) {
+import { NavLink } from "react-router-dom";
+
+export default function Button({ BtnClass, title, to }: any) {
     return (
-            <a className={BtnClass}>{title}</a>
+            <NavLink to={to} className={BtnClass}>{title}</NavLink>
     )
 }
