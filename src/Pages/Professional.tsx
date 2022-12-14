@@ -11,7 +11,7 @@ export default function Professional() {
       </div>
 
       <div>
-        <img src={image}/>
+        <img src={image} alt="Ilustração"/>
       </div>
     </ProfessionalSection>
   );

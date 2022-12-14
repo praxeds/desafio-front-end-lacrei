@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <div>
-        <img src={image} />
+        <img src={image} alt="Ilustração de uma doutora"/>
       </div>
     </HomeSection>
   );

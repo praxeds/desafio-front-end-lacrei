@@ -34,9 +34,9 @@ export default function Footer() {
         </NavItem>
       </ul>
       <div className="icons">
-        <a target="_blank" href="https://www.instagram.com/lacrei.saude"><img src={Instagram} alt="Instagram" /></a>
-        <a target="_blank" href="https://www.facebook.com/lacrei.saude"><img src={Facebook} alt="Facebook" /></a>
-        <a target="_blank" href="https://www.linkedin.com/company/lacrei"><img src={LinkedIn} alt="LinkedIn" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/lacrei.saude"><img src={Instagram} alt="Instagram" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/lacrei.saude"><img src={Facebook} alt="Facebook" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/lacrei"><img src={LinkedIn} alt="LinkedIn" /></a>
       </div>
       <p>Desafio Front-end Lacrei</p>
     </FooterSection>

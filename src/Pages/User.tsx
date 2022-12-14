@@ -10,7 +10,7 @@ export default function User() {
       </div>
 
       <div>
-        <img src={image}/>
+        <img src={image} alt="Ilustração"/>
       </div>
     </UserSection>
   );
