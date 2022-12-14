@@ -7,6 +7,7 @@ import { GlobalStyles } from './Styles/GlobalStyles';
 import Nav from './Components/Nav';
 import Home from './Pages/Home';
 import User from './Pages/User';
+import Professional from './Pages/Professional';
 import Footer from './Components/Footer';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Nav />
         <Home />
         <User />
+        <Professional />
         <Footer />
     </>
   );
