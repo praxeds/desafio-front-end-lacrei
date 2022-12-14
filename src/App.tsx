@@ -5,8 +5,9 @@ import { GlobalStyles } from './Styles/GlobalStyles';
 
 
 import Nav from './Components/Nav';
-import Footer from './Components/Footer';
 import Home from './Pages/Home';
+import User from './Pages/User';
+import Footer from './Components/Footer';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <GlobalStyles />
         <Nav />
         <Home />
+        <User />
         <Footer />
     </>
   );
