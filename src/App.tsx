@@ -1,24 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { GlobalStyles } from './Styles/GlobalStyles';
 
 
 import Nav from './Components/Nav';
+import Footer from './Components/Footer';
+
 import Home from './Pages/Home';
 import User from './Pages/User';
 import Professional from './Pages/Professional';
-import Footer from './Components/Footer';
 
 export default function App() {
   return (
     <>
+      <Router>
         <GlobalStyles />
         <Nav />
-        <Home />
-        <User />
-        <Professional />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pessoa-usuaria" element={<User />} />
+          <Route path="/profissional" element={<Professional />} />
+        </Routes>
         <Footer />
+      </Router>
     </>
   );
 }

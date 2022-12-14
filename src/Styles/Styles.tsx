@@ -23,23 +23,6 @@ ul {
     padding: 0;
     ${Mixins.text(1, 700)};
     color: ${Mixins.colors.black};
-    li>a {
-        ${Mixins.resetLink()};
-        ${Mixins.transition("all", "0.2s", "ease")};
-        cursor: pointer;
-        &:hover {
-            color: ${Mixins.colors.gray};
-        }
-        &:active, &:focus {
-            color: ${Mixins.colors.green};
-        }
-        &.active {
-            color: ${Mixins.colors.green};
-            &:hover {
-                color: ${Mixins.colors.lightGreen};
-            }
-        }
-    }
 }
 @media (max-width: 1040px) {
     padding: 0.5rem 2rem;
@@ -51,6 +34,24 @@ ul {
         ${Mixins.text(0.9, 700)};
     }
 }
+`;
+
+export const ListItem = styled.li<{activepath:string}>`
+    ${Mixins.transition("all", "0.2s", "ease")};
+    cursor: pointer;
+    color: ${props => props.activepath === 'true' ? '#018762' : '#1F1F1F'};
+    &:hover {
+        color: ${Mixins.colors.gray};
+    }
+    &:active, &:focus {
+        color: ${Mixins.colors.green};
+    }
+    &.active {
+        color: ${Mixins.colors.green};
+        &:hover {
+            color: ${Mixins.colors.lightGreen};
+        }
+    }
 `;
 
 export const FooterSection = styled.footer`
