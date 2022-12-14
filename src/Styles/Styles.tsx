@@ -8,12 +8,14 @@ padding: 0.5rem 4rem;
 letter-spacing: -0.5px;
 h1 {
     ${Mixins.text(2, 700)};
-    cursor: pointer;
     margin: 0;
-    color: ${Mixins.colors.green};
-    ${Mixins.transition("all", "0.2s", "ease")};
-    &:hover {
+    a {
+        ${Mixins.resetLink()};
+        color: ${Mixins.colors.green};
+        ${Mixins.transition("all", "0.2s", "ease")};
+        &:hover {
         color: ${Mixins.colors.lightGreen};
+        }
     }
 }
 ul {
@@ -22,7 +24,24 @@ ul {
     margin: 0;
     padding: 0;
     ${Mixins.text(1, 700)};
-    color: ${Mixins.colors.black};
+    a {
+        ${Mixins.resetLink()};
+        color: ${Mixins.colors.black};
+            ${Mixins.transition("all", "0.2s", "ease")};
+            cursor: pointer;
+            &:hover {
+                color: ${Mixins.colors.gray};
+            }
+            &:active, &:focus {
+                color: ${Mixins.colors.green};
+            }
+            &.active {
+                color: ${Mixins.colors.green};
+                &:hover {
+                    color: ${Mixins.colors.lightGreen};
+                }
+            }
+    }
 }
 @media (max-width: 1040px) {
     padding: 0.5rem 2rem;
@@ -36,22 +55,10 @@ ul {
 }
 `;
 
-export const ListItem = styled.li<{activepath:string}>`
+export const NavItem = styled.li<{ activepath: string }>`
     ${Mixins.transition("all", "0.2s", "ease")};
     cursor: pointer;
     color: ${props => props.activepath === 'true' ? '#018762' : '#1F1F1F'};
-    &:hover {
-        color: ${Mixins.colors.gray};
-    }
-    &:active, &:focus {
-        color: ${Mixins.colors.green};
-    }
-    &.active {
-        color: ${Mixins.colors.green};
-        &:hover {
-            color: ${Mixins.colors.lightGreen};
-        }
-    }
 `;
 
 export const FooterSection = styled.footer`
@@ -200,6 +207,10 @@ export const BtnContainer = styled.div`
                 border: 2px solid ${Mixins.colors.lightGreen};
             }
         }
+    }
+    @media (max-width: 520px) {
+        flex-direction: column;
+    gap: 1rem;
     }
 `;
 
