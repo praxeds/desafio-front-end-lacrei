@@ -105,8 +105,8 @@ export const FooterSection = styled.footer`
         color: ${Mixins.colors.gray};
     }
     @media (max-width: 520px) {
-        margin: 0px 1rem;
-        padding-top: 1rem;
+        margin: 0px 1rem !important;
+        padding-top: 1rem !important;
         ul.nav {
             flex-direction: column;
             gap: 0.25rem;
@@ -182,7 +182,7 @@ export const BtnContainer = styled.div`
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     padding-top: 3rem;
-    max-width: 453px;
+    max-width: 453px !important;
     a {
         ${Mixins.resetLink()};
         ${Mixins.text(1.125, 700)};
