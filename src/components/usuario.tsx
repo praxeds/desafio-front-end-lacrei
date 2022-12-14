@@ -1,5 +1,5 @@
-import { UserSection } from "./styled";
-import image from '../../assets/static/pessoaUsuariaImg.16f76b21.svg';
+import { UserSection } from "../stylesheets/usuario";
+import image from '../assets/static/pessoaUsuariaImg.16f76b21.svg';
 
 function User() {
   return (

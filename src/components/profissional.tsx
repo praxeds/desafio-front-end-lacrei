@@ -1,5 +1,5 @@
-import { ProfissionalSection } from "./styled";
-import image from '../../assets/static/profissional.6700284d.svg';
+import { ProfissionalSection } from "../stylesheets/profissional";
+import image from '../assets/static/profissional.6700284d.svg';
 
 function Professional() {
   return (

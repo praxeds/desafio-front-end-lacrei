@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { styles } from "../globalStyles";
+import { styles } from "../stylesheets/globalStyles";
 
-export const ProfissionalSection = styled.main`
+export const UserSection = styled.main`
     &.noDisplay {
         display: none;
     }

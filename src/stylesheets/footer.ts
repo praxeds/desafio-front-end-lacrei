@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { styles } from "../globalStyles";
+import { styles } from "../stylesheets/globalStyles";
 
 export const FooterSection = styled.footer`
     margin: 0px 4rem;

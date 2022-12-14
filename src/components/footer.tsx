@@ -1,18 +1,15 @@
-import { FooterSection } from "./styled";
+import { FooterSection } from "../stylesheets/footer";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiFacebookCircleLine } from "react-icons/ri";
-
-import {handleClick} from '../functions'
-
 
 function Footer() {
   return (
     <FooterSection>
       <div className="nav">
-        <a className="home el" onClick={handleClick('Home | Desafio Lacrei', '.home.el', 'home')}>Home</a>
-        <a className="user el" onClick={handleClick('Pessoa Usuária | Desafio Lacrei', '.user.el', 'usuario')}>Pessoa Usuária</a>
-        <a className="pro el" onClick={handleClick('Profissional | Desafio Lacrei', '.pro.el', 'profissional')}>Profissional</a>
+        <a className="home el">Home</a>
+        <a className="user el">Pessoa Usuária</a>
+        <a className="pro el">Profissional</a>
       </div>
       <div className="icons">
         <a target="_blank" href="https://www.instagram.com/lacrei.saude"><RiInstagramLine/></a>

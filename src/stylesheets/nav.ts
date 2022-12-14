@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {styles} from "../globalStyles";
+import { styles } from "../stylesheets/globalStyles";
 
 export const NavbarSection = styled.nav`
     background: ${styles.colors.secondary};

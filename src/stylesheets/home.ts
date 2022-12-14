@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { styles } from "../globalStyles";
+import { styles } from "../stylesheets/globalStyles";
 
 export const HomeSection = styled.main`
     &.noDisplay {
