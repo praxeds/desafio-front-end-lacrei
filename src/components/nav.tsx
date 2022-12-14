@@ -1,6 +1,4 @@
-import React from 'react';
 import { NavSection } from '../Styles/Styles';
-
 
 export default function Nav() {
   return (
